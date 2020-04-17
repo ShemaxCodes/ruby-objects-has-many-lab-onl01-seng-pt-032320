@@ -28,8 +28,8 @@ end
   end
 
 
-  self.post_count
+  def self.post_count
     @@post_count
-
+end
   
 end 
