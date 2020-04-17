@@ -14,6 +14,13 @@ def add_post(post)
   post.author = self
   @@post_count +=1
 end
+
+ def add_song_by_name(name)
+    song = Song.new(name)
+    self.songs << song
+    song.artist = self
+  end
+
   
   def posts
     @posts  
