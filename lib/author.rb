@@ -21,10 +21,7 @@ end
     post.author = self
   end
 
-  
-  def posts
-    @posts  
-  end
+
 
   def self.post_count
     @@post_count
