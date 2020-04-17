@@ -19,6 +19,7 @@ end
     post = Post.new(title)
     self.posts << post 
     post.author = self
+    @@post_count += 1 
   end
 
 
