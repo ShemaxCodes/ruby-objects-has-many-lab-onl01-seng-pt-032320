@@ -8,6 +8,11 @@ def initialize(name)
   @name = name 
   @posts = []
 end 
+
+def songs
+   Post.all.select {|song| song.artist == self} 
+    
+  end 
   
 def add_post(post)
   @posts << post 
